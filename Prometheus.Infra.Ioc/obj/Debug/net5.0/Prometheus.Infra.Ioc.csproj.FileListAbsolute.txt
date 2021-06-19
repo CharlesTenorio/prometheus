@@ -1,0 +1,12 @@
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/bin/Debug/net5.0/Prometheus.Infra.Ioc.deps.json
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/bin/Debug/net5.0/Prometheus.Infra.Ioc.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/bin/Debug/net5.0/ref/Prometheus.Infra.Ioc.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/bin/Debug/net5.0/Prometheus.Infra.Ioc.pdb
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.csproj.AssemblyReference.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.AssemblyInfoInputs.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.AssemblyInfo.cs
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.csproj.CoreCompileInputs.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/ref/Prometheus.Infra.Ioc.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/obj/Debug/net5.0/Prometheus.Infra.Ioc.pdb

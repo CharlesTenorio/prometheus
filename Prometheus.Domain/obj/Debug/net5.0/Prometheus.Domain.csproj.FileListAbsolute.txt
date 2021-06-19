@@ -1,0 +1,12 @@
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/bin/Debug/net5.0/Prometheus.Domain.deps.json
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/bin/Debug/net5.0/Prometheus.Domain.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/bin/Debug/net5.0/ref/Prometheus.Domain.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/bin/Debug/net5.0/Prometheus.Domain.pdb
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.csproj.AssemblyReference.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.AssemblyInfoInputs.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.AssemblyInfo.cs
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.csproj.CoreCompileInputs.cache
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/ref/Prometheus.Domain.dll
+/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/Debug/net5.0/Prometheus.Domain.pdb
