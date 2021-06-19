@@ -11,4 +11,9 @@
 * .NET CLI
 * vs Code
 
-![.Net Core](https://pt.m.wikipedia.org/wiki/Ficheiro:.NET_Core_Logo.svg)
+![.Net Core](https://drive.google.com/file/d/1FF6BHhgTyx_EA-rxY8nXPbt0x0AQQ8te/view?usp=sharing)
+
+>Este é um *Projeto codigo aberto *. Desenvolvido pra ajudar a melhorar nosssas cidades. 
+>Sistem atende Prefitura de Peque e Medio e Grande porte
+
+>Códigos de **Katana Solfware**, _itálico_ e <http://www.katanasoftware.com.br/> Katana Prometheus.
