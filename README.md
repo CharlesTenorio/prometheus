@@ -11,7 +11,8 @@
 * .NET CLI
 * vs Code
 
-![.Net Core](https://drive.google.com/file/d/1FF6BHhgTyx_EA-rxY8nXPbt0x0AQQ8te/view?usp=sharing)
+![image](https://drive.google.com/file/d/1FF6BHhgTyx_EA-rxY8nXPbt0x0AQQ8te/view?usp=sharing)
+
 
 >Este é um *Projeto codigo aberto *. Desenvolvido pra ajudar a melhorar nosssas cidades. 
 >Sistem atende Prefitura de Peque e Medio e Grande porte
