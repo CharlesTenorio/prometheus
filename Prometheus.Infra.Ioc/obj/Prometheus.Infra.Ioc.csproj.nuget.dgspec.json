@@ -4,6 +4,170 @@
     "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/Prometheus.Infra.Ioc.csproj": {}
   },
   "projects": {
+    "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj",
+        "projectName": "Prometheus.Application",
+        "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj",
+        "packagesPath": "/home/charles-lid/.nuget/packages/",
+        "outputPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charles-lid/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj": {
+                "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj",
+        "projectName": "Prometheus.Domain",
+        "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj",
+        "packagesPath": "/home/charles-lid/.nuget/packages/",
+        "outputPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charles-lid/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj",
+        "projectName": "Prometheus.Infra.Data",
+        "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj",
+        "packagesPath": "/home/charles-lid/.nuget/packages/",
+        "outputPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/charles-lid/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj": {
+                "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Ioc/Prometheus.Infra.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +189,17 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj": {
+                "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj"
+              },
+              "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj": {
+                "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj"
+              },
+              "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj": {
+                "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

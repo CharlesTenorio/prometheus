@@ -5,6 +5,13 @@ namespace Prometheus.Domain.Entities
 {
     public sealed class Prefeitura : Base
     {
+
+
+        public string Cnpj{get; private set;}
+         public string Nome { get; private set ; }
+        public string Fone { get; private set ; }
+        public string Email { get; private set ; }
+        
         public Prefeitura(int id, string cnpj, string nome, string email, string fone, string imagem)
         {
             this.Id = id;

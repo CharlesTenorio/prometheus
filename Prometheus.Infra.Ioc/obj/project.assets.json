@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Prometheus.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Prometheus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Prometheus.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Prometheus.Application.dll": {}
+        }
+      },
+      "Prometheus.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Prometheus.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Prometheus.Domain.dll": {}
+        }
+      },
+      "Prometheus.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Prometheus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Prometheus.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Prometheus.Infra.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Prometheus.Application/1.0.0": {
+      "type": "project",
+      "path": "../Prometheus.Application/Prometheus.Application.csproj",
+      "msbuildProject": "../Prometheus.Application/Prometheus.Application.csproj"
+    },
+    "Prometheus.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Prometheus.Domain/Prometheus.Domain.csproj",
+      "msbuildProject": "../Prometheus.Domain/Prometheus.Domain.csproj"
+    },
+    "Prometheus.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../Prometheus.Infra.Data/Prometheus.Infra.Data.csproj",
+      "msbuildProject": "../Prometheus.Infra.Data/Prometheus.Infra.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Prometheus.Application >= 1.0.0",
+      "Prometheus.Domain >= 1.0.0",
+      "Prometheus.Infra.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/charles-lid/.nuget/packages/": {}
@@ -31,7 +88,17 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj": {
+              "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Application/Prometheus.Application.csproj"
+            },
+            "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj": {
+              "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Domain/Prometheus.Domain.csproj"
+            },
+            "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj": {
+              "projectPath": "/home/charles-lid/Documentos/projetos/prometheus/Prometheus.Infra.Data/Prometheus.Infra.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

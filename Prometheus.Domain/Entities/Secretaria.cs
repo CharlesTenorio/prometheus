@@ -10,6 +10,13 @@ namespace Prometheus.Domain.Entities
        
         public Prefeitura prefeitura {get; set;}
 
+
+        public string Cnpj{get; private set;}
+         public string Nome { get; private set ; }
+        public string Fone { get; private set ; }
+        public string Email { get; private set ; }
+        
+
         public Secretaria(string cnpj, int id, int codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)
         {
             this.Id = id;
