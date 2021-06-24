@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 namespace Prometheus.Domain.Entities
 {
-    public class Endereco :Base
+    public sealed  class Endereco :Base
     {
         public Endereco(string cidade, string bairro, string rua, string cep, string zona)
         {
@@ -16,6 +17,10 @@ namespace Prometheus.Domain.Entities
          public string Cep { get; private set ; }
          public string Zona { get; private set ; }
          public ICollection <Cidadao>Cidadoes{get; set;}
+
+         public ICollection<Chamado>Chamados{get; set;}
+
+         public ICollection<Colaborador>Colaboradores{get; set;}
           
 
 

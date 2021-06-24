@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 
 
@@ -15,6 +16,9 @@ namespace Prometheus.Domain.Entities
          public string Nome { get; private set ; }
         public string Fone { get; private set ; }
         public string Email { get; private set ; }
+
+        public ICollection<Demanda> Demandas{get; set;}
+        public ICollection<Colaborador>Colaboradores{get; set;}
         
 
         public Secretaria(string cnpj, int id, int codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)

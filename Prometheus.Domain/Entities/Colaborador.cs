@@ -1,23 +1,28 @@
-using System.Collections.Generic;
-
+using System.Security.Cryptography.X509Certificates;
 namespace Prometheus.Domain.Entities
 {
-    public sealed class Cidadao :Base
+    public class Colaborador :Base
     {
-        public Cidadao(string cpf, string nome, string fone, string email)
+        public Colaborador(string nome, bool concursado, string fone, string email, string cpf, string idEndereco)
         {
-           ValidateDomain(cpf, nome, fone, email);
+             ValidateDomain(cpf, nome, fone, email);
+             IdEndereco = idEndereco;
+             Concursado= concursado;
         }
 
         public string Nome { get; private set ; }
+
+        public bool Concursado{get; private set;}
          public string Fone { get; private set ; }
         public string Email { get; private set ; }
 
          public string Cpf { get; private set ; }
 
-         public int IdEndereco{get; set;}
+         public string IdEndereco{get; set;}
 
-         public ICollection<Chamado> Chamados{get; set;}
+         public string IdSecretaria{get; set;}
+
+         
 
         
         
@@ -34,5 +39,7 @@ namespace Prometheus.Domain.Entities
             this.Nome = nome;
             this.Email =email;
             this.Fone= fone;
+    }
+        
     }
 }
