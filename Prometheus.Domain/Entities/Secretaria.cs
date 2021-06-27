@@ -7,7 +7,8 @@ namespace Prometheus.Domain.Entities
     public sealed class Secretaria : Base
     {
         
-        public int CodigoPrefeitura { get; set ; }
+        public Guid IdPrefeitura { get; set ; }
+        
        
         public Prefeitura prefeitura {get; set;}
 
@@ -21,22 +22,22 @@ namespace Prometheus.Domain.Entities
         public ICollection<Colaborador>Colaboradores{get; set;}
         
 
-        public Secretaria(string cnpj, int id, int codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)
+        public Secretaria(string cnpj,  Guid codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)
         {
-            this.Id = id;
-            this.CodigoPrefeitura = codigoPrefeitura;
+            
+            IdPrefeitura = codigoPrefeitura;
             ValidateDomain(cnpj, nome, fone, email);
             this.prefeitura = prefeitura;
             this.DataAt=DateTime.Now;
         }
 
 
-        public void Update(string cnpj, int id, int codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)
+        public void Update(string cnpj,  Guid codigoPrefeitura, string nome, string fone, string email, Prefeitura prefeitura)
         {
-            this.Id = id;
-            this.CodigoPrefeitura = codigoPrefeitura;
+            
+             IdPrefeitura= codigoPrefeitura;
             ValidateDomain(cnpj, nome, fone, email);
-            this.prefeitura = prefeitura;
+            prefeitura = prefeitura;
         }
 
 

@@ -7,8 +7,8 @@ namespace Prometheus.Domain.Entities
     {
         protected Base()
         {
-            this.GlobalId = Guid.NewGuid();;
-            this.DataAt = DateTime.Now;
+            GlobalId = Guid.NewGuid();
+            DataAt = DateTime.Now;
             
         }
 

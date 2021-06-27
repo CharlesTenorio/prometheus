@@ -12,19 +12,19 @@ namespace Prometheus.Domain.Entities
         public string Fone { get; private set ; }
         public string Email { get; private set ; }
         
-        public Prefeitura(int id, string cnpj, string nome, string email, string fone, string imagem)
+        public Prefeitura(string cnpj, string nome, string email, string fone, string imagem)
         {
-            this.Id = id;
+            
             ValidateDomain(cnpj, nome, email, fone, imagem);
-            this.DataAt= DateTime.Now;
+            
         }
 
 
-         public void Update(int id, string cnpj, string nome, string email, string fone, string imagem)
+         public void Update(string cnpj, string nome, string email, string fone, string imagem)
         {
-            this.Id = id;
+            
             ValidateDomain(cnpj, nome, email, fone, imagem);
-            this.DataAt= DateTime.Now;
+            DataAt= DateTime.Now;
         }
 
        

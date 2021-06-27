@@ -1,14 +1,10 @@
+using System;
 using System.Security.Cryptography.X509Certificates;
 namespace Prometheus.Domain.Entities
 {
     public class Colaborador :Base
     {
-        public Colaborador(string nome, bool concursado, string fone, string email, string cpf, string idEndereco)
-        {
-             ValidateDomain(cpf, nome, fone, email);
-             IdEndereco = idEndereco;
-             Concursado= concursado;
-        }
+        
 
         public string Nome { get; private set ; }
 
@@ -18,9 +14,41 @@ namespace Prometheus.Domain.Entities
 
          public string Cpf { get; private set ; }
 
-         public string IdEndereco{get; set;}
+         public Guid IdEndereco{get; set;}
 
-         public string IdSecretaria{get; set;}
+         public Endereco Endereco{get; set;}
+
+         public Guid IdSecretaria{get; set;}
+
+         public Secretaria Secretaria{get; set;}
+
+
+         public Funcao Funcao{get; set;}
+         public Guid IdFuncao{get; set;}
+
+         public Equipe Equipe{get; set;}
+         public Guid IdEquipe{get; set;}
+        
+        public Colaborador(string nome, bool concursado, string fone, string email, string cpf)
+        {
+             ValidateDomain(cpf, nome, fone, email);
+            
+             Concursado= concursado;
+        }
+
+
+
+        public void Update(string nome, bool concursado, string fone, string email, string cpf, Guid idFuncao, Guid idSecretaria)
+        {
+             ValidateDomain(cpf, nome, fone, email);
+             IdFuncao=idFuncao;
+             IdSecretaria =idSecretaria;
+             Concursado= concursado;
+        }
+
+
+
+        
 
          
 
@@ -35,10 +63,10 @@ namespace Prometheus.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(email), "Email nao pode ser nulo");
             DomainExceptionValidation.When(DomainExceptionValidation.IsValidEmail(email), "Formato de email invalido");
             DomainExceptionValidation.When(string.IsNullOrEmpty(fone), "Fone nao pode ser Nulo ou branco");
-            this.Cpf= cpf;
-            this.Nome = nome;
-            this.Email =email;
-            this.Fone= fone;
+            Cpf= cpf;
+            Nome = nome;
+            Email =email;
+            Fone= fone;
     }
         
     }

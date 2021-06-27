@@ -5,15 +5,17 @@ namespace Prometheus.Domain.Entities
     {
         public Demanda(string nome, string codigo, int idSecretaria)
         {
-             DomainExceptionValidation.When(idSecretaria < 0, "Invalid Id value");
-             IdSecretaria = idSecretaria;
+            
+             IdSecretaria = IdSecretaria;
              ValidateDomain(nome, codigo);
         }
 
         public string Nome{get; private set;}
         public string Codigo{get; private set;}
 
-        public int IdSecretaria{get; private set;}
+        public string IdSecretaria{get; private set;}
+
+        public Secretaria Secretaria{get; set;}
         public ICollection <Chamado> Chamados{get; set;}
        
     

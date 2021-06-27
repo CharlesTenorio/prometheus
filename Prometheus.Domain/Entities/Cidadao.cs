@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Prometheus.Domain.Entities
@@ -9,13 +10,23 @@ namespace Prometheus.Domain.Entities
            ValidateDomain(cpf, nome, fone, email);
         }
 
+
+         public void Update(string cpf, string nome, string fone, string email, Guid idEndereco)
+        {
+           ValidateDomain(cpf, nome, fone, email);
+           IdEndereco = idEndereco;
+        }
+
+
         public string Nome { get; private set ; }
          public string Fone { get; private set ; }
         public string Email { get; private set ; }
 
          public string Cpf { get; private set ; }
 
-         public int IdEndereco{get; set;}
+         public Guid IdEndereco{get; set;}
+
+         public Endereco Endereco{get; set;}
 
          public ICollection<Chamado> Chamados{get; set;}
 
