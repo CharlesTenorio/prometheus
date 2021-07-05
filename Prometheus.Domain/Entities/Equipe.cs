@@ -20,6 +20,7 @@ namespace Prometheus.Domain.Entities
 
 
         ICollection<Colaborador> Colaboradores{get; set;}
+        ICollection<DetalheAtendimento> DetalheAtendimentos{get; set;}
 
       
 

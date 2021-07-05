@@ -21,17 +21,19 @@ namespace Prometheus.Domain.Entities
          public ICollection<Chamado>Chamados{get; set;}
 
          public ICollection<Colaborador>Colaboradores{get; set;}
+
+         public ICollection<Prefeitura>Prefeituras{get; set;}
           
 
 
          private void ValidateDomain(string cidade, string bairro, string rua, string zona){
             DomainExceptionValidation.When(string.IsNullOrEmpty(cidade), "Cidade  nao pode ser null ou em branco");
-            DomainExceptionValidation.When(string.IsNullOrEmpty(bairro), "Email nao pode ser nulo");
-            DomainExceptionValidation.When(string.IsNullOrEmpty(zona), "Fone nao pode ser Nulo ou branco");
-            this.Cidade = cidade;
-            this.Bairro = bairro;
-            this.Rua=rua;
-            this.Zona = zona;
+            DomainExceptionValidation.When(string.IsNullOrEmpty(bairro), "Bairro nao pode ser nulo");
+            DomainExceptionValidation.When(string.IsNullOrEmpty(zona), "Zona nao pode ser vazia");
+            Cidade = cidade;
+            Bairro = bairro;
+            Rua=rua;
+            Zona = zona;
            
 
 

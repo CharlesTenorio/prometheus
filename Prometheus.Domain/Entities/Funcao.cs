@@ -29,7 +29,7 @@ namespace Prometheus.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(nome), "Nome nao pode ser null ou em branco");
             Nome = nome;
          
-    }
+        }
 
 
 
