@@ -11,6 +11,8 @@ namespace Prometheus.Domain.Entities
          public string Nome { get; private set ; }
         public string Fone { get; private set ; }
         public string Email { get; private set ; }
+
+        
         
         public Prefeitura(string cnpj, string nome, string email, string fone, string imagem)
         {
@@ -20,11 +22,12 @@ namespace Prometheus.Domain.Entities
         }
 
 
-         public void Update(string cnpj, string nome, string email, string fone, string imagem)
+         public void Update(string cnpj, string nome, string email, string fone, string imagem, Guid idEndereco)
         {
             
             ValidateDomain(cnpj, nome, email, fone, imagem);
             DataAt= DateTime.Now;
+            IdEndereco= idEndereco;
         }
 
        
@@ -40,13 +43,16 @@ namespace Prometheus.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(fone), "Fone nao pode ser Nulo ou branco");
             DomainExceptionValidation.When(Image.Length>250, "nome da imagem so pode ter 256");
             
-            this.Nome = nome;
-            this.Cnpj = cnpj;
-            this.Fone=fone;
-            this.Email =email;
-            this.Image =imagem;
+            Nome = nome;
+            Cnpj = cnpj;
+            Fone=fone;
+            Email =email;
+            Image =imagem;
 
 
         }
+
+        public Guid IdEndereco {get; set;}
+        public Endereco Endereco{get; set;}
     }
 }

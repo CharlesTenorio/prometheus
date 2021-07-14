@@ -7,7 +7,8 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 
 namespace Prometheus.Domain{
-    public class DomainExceptionValidation : Exception{
+    public class DomainExceptionValidation : Exception
+	{
         public DomainExceptionValidation(string error): base(error)
         {
             
@@ -155,10 +156,15 @@ namespace Prometheus.Domain{
 		digito = digito + resto.ToString();
 
 		return cpf.EndsWith(digito);
-	      }
+	  }
+
+	   public static bool IsDataValida(DateTime dataEntrada)
+	   {
+		   DateTime dataAtual = DateTime.Now;
+           int result = DateTime.Compare(dataAtual, dataEntrada);
+	   }
 	}
 
     }
 
 
-}

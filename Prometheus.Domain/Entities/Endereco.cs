@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 namespace Prometheus.Domain.Entities
 {
@@ -16,14 +15,15 @@ namespace Prometheus.Domain.Entities
          public string Rua { get; private set ; }
          public string Cep { get; private set ; }
          public string Zona { get; private set ; }
-         public ICollection <Cidadao>Cidadoes{get; set;}
+         public Cidadao Cidadoes {get; set;}
 
-         public ICollection<Chamado>Chamados{get; set;}
+         public ICollection<Chamado> Chamados {get; set;}
 
-         public ICollection<Colaborador>Colaboradores{get; set;}
+         public Colaborador Colaboradores {get; set;}
 
-         public ICollection<Prefeitura>Prefeituras{get; set;}
-          
+         public Prefeitura Prefeituras {get; set;}
+
+         
 
 
          private void ValidateDomain(string cidade, string bairro, string rua, string zona){
