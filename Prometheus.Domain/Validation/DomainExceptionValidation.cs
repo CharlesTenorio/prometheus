@@ -21,7 +21,6 @@ namespace Prometheus.Domain{
 
         }
 
-
         public static bool IsCnpj(string cnpj)
 		{
 			int[] multiplicador1 = new int[12] {5,4,3,2,9,8,7,6,5,4,3,2};
@@ -67,7 +66,6 @@ namespace Prometheus.Domain{
 			return cnpj.EndsWith(digito);
 		}
 
-
         public static bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
@@ -111,7 +109,6 @@ namespace Prometheus.Domain{
                 return false;
             }
         }
-
         public static bool IsCpf(string cpf)
 	    {
 		int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -158,13 +155,22 @@ namespace Prometheus.Domain{
 		return cpf.EndsWith(digito);
 	  }
 
-	   public static bool IsDataValida(DateTime dataEntrada)
+	   public static bool IsDataMaioOuGualDataAtautal(DateTime dataEntrada)
 	   {
 		   DateTime dataAtual = DateTime.Now;
-           int result = DateTime.Compare(dataAtual, dataEntrada);
+		   bool dataOk=false;
+           if (DateTime.Compare(dataEntrada, dataAtual) >= 0){
+			   dataOk = true;
+		   }
+		   return dataOk;
+	   }
+	   public static bool QtdMaiorIgualZero(int qtd){
+		   bool maiorIgual=false;
+		   if (qtd>=0){
+			   maiorIgual=true;
+		   }		   
+		   return maiorIgual;
 	   }
 	}
 
     }
-
-
